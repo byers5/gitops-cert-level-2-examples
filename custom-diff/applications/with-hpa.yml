@@ -22,3 +22,9 @@ spec:
     syncOptions:
       - CreateNamespace=true  
    
+  # To HPA to be always Out-of-sync
+  ignoreDifferences:
+  - group: apps
+    kind: Deployment
+    jsonPointers:
+    - /spec/replicas
