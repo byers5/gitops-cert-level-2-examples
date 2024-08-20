@@ -28,7 +28,7 @@ spec:
       name: simple-deployment
       namespace: example02
       jsonPointers:
-        - /metadata/annotations/annotations
+        - /metadata/annotations/creation
     - kind: Secret
       name: example-secret
       namespace: example02
